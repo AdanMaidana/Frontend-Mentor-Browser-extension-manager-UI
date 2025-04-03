@@ -6,8 +6,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://AdanMaidana.github.io',
-  base: 'Frontend-MentorBrowser-extension-manager-UI',
+  site: "https://adanmaidana.github.io/Frontend-Mentor-Browser-extension-manager-UI/",
+  base: '/Frontend-Mentor-Browser-extension-manager-UI',
   vite: {
     plugins: [tailwindcss()],
   },
