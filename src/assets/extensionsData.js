@@ -1,10 +1,9 @@
-const base = import.meta.env.BASE_URL; // Obtiene el base automáticamente
-
+const base = import.meta.env.BASE_URL; 
 const extensionsData = [
   {
     id: 1,
     name: 'DevLens',
-    img: `${base}images/logo-devlens.svg`, // Agrega el base dinámicamente
+    img: `${base}images/logo-devlens.svg`, 
     description: 'Quickly inspect page layouts and visualize element boundaries.',
     active: true
   },

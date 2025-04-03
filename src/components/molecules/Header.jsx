@@ -1,3 +1,4 @@
+const base = import.meta.env.BASE_URL; 
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -24,7 +25,7 @@ export default function Header() {
       <button
         onClick={() => toggleDarkTheme()}
         className="rounded-lg md:rounded-xl px-3 cursor-pointer transition-colors focus-visible:bg-[#eaf0f0] dark:focus-visible:bg-[#525868] outline-2 outline-transparent outline-offset-2 focus-visible:outline-[#f25d51]">
-        <img className="h-6 w-6" src={isDark ? "/images/icon-sun.svg" : "/images/icon-moon.svg"} alt={isDark ? 'dark mode icon' : 'light mode icon'} />
+        <img className="h-6 w-6" src={isDark ? `${base}/images/icon-sun.svg` : `${base}/images/icon-moon.svg`} alt={isDark ? 'dark mode icon' : 'light mode icon'} />
       </button>
     </header >
   )
